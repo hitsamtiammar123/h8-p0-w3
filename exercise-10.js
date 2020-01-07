@@ -4,11 +4,11 @@ function perkalianUnik(arr) {
 
     for(var i=0;i<arr.length;i++){
         var curr=arr[i];
-        var r=arr.reduce(function(p,c,j){
-            if(j!==i)
-                return p*c;
-            else return p;
-        });
+        var mapArr=arr.filter((c)=>c!==curr);
+        var r=1;
+        for(var j=0;j<mapArr.length;j++)
+            r=r*mapArr[j];
+        
         result.push(r);
     }
     return result;
