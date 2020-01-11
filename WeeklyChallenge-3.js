@@ -35,6 +35,30 @@
  * - Wajib menuliskan Pseudocode!
  * - Dilarang menggunakan built-in function .reduce .filter .map .indexOf .lastIndexOf
  *
+ * PSEUDOCODE:
+ * 
+ * FUNCTION mineCraft (mine,steps)
+ * BEGIN
+ * 
+ * 		STORE step as 0
+ * 		STORE result as empty array
+ * 
+ * 		FOR each m1 in mine and step is not equal steps
+ * 			FOR each craft in m1 and step is not equal steps
+ * 				CASE craft OF
+ * 					c	: CALL checkCraft with result and 'copper'
+ * 					h or s	: CALL checkCraft with result and 'silver'
+ * 					g	: CALL checkCraft with result and 'gold'
+ * 					d	: CALL checkCraft with result and 'diamond'
+ * 				ENDCASE
+ * 			ENDFOR
+ * 		ENDFOR
+ * 		
+ * 		SORT result based on craft material
+ * 		
+ * 		RETURN result
+ * 
+ * END	
  */
 function checkCraft(crafts,mine){
 	var hasCraft=false;
