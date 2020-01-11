@@ -146,7 +146,6 @@ function mineCraft(mine, steps) {
 				case 'c':
 					checkCraft(result,'copper');
 				break;
-				case 'h':
 				case 's':
 					checkCraft(result,'silver');
 				break;
