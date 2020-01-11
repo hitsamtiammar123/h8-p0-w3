@@ -51,6 +51,8 @@
  * 					g	: CALL checkCraft with result and 'gold'
  * 					d	: CALL checkCraft with result and 'diamond'
  * 				ENDCASE
+ * 				
+ * 				INCREMENT step by 1
  * 			ENDFOR
  * 		ENDFOR
  * 		
