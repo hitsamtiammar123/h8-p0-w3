@@ -37,6 +37,35 @@
  *
  * PSEUDOCODE:
  * 
+ * FUNCTION checkCraft(crafts,mine)
+ * BEGIN
+ * 		STORE hasCraft as false
+ * 		STORE indexCraft as -1
+ * 
+ * 		FOR each craft in crafts 
+ * 			IF craft name is equal mine
+ * 				SET hasCraft into true
+ * 				SET indexCraft into current index loop
+ * 			ENDIF
+ * 		ENDFOR
+ * 		
+ * 		IF hasCraft is true
+ * 			ADD new element into crafts
+ * 		ELSE	
+ * 			INCREMENT crafts element based on indexCraft value by 1 
+ * 		ENDIF
+ * END
+ * 
+ * FUNCTION craftValue (c)
+ * BEGIN
+ * 		CASE name of material in c
+ * 			'copper': RETURN 0
+ * 			'silver': RETURN 1 
+ * 			'gold'  : RETURN 2 
+ * 			'diamond': RETURN 3
+ * END
+ * 
+ * 
  * FUNCTION mineCraft (mine,steps)
  * BEGIN
  * 
