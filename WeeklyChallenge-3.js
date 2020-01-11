@@ -67,6 +67,18 @@ function craftValue(c){
 	}
 }
 
+function sort(arr,callback){
+	for(var i=0;i<arr.length-1;i++){
+		for(var j=0;j<arr.length-i-1;j++){
+			if(callback(arr[j],arr[j+1])){
+				var temp=arr[j];
+				arr[j]=arr[j+1];
+				arr[j+1]=temp;
+			}
+		}
+	}
+}
+
 function mineCraft(mine, steps) {
 	var step=0;
 	var result=[];
@@ -94,7 +106,7 @@ function mineCraft(mine, steps) {
 		}
 	}
 
-	result=result.sort((a,b)=>craftValue(a)-craftValue(b));
+	sort(result,(a,b)=>craftValue(a)>craftValue(b))
 
 	return result;
 
