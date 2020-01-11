@@ -56,7 +56,7 @@
  * 			ENDFOR
  * 		ENDFOR
  * 		
- * 		SORT result based on craft material
+ * 		SORT result based on craft material value
  * 		
  * 		RETURN result
  * 
